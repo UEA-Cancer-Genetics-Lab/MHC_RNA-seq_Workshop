@@ -6,6 +6,6 @@
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
-  "postCreateCommand": "fastqc --version && salmon --version && samtools --version",
+  "postCreateCommand": "fastqc --version && salmon --version",
   "remoteUser": "root"
 }

@@ -31,12 +31,13 @@ RUN apt-get update && \
     python3-pip \
     default-jre \
     fastqc \
+    samtools && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # Install fastp (precompiled binary)
-#RUN wget http://opengene.org/fastp/fastp -O /usr/local/bin/fastp && \
-    #chmod a+x /usr/local/bin/fastp
+RUN wget http://opengene.org/fastp/fastp -O /usr/local/bin/fastp && \
+    chmod a+x /usr/local/bin/fastp
 
 
 # Install STAR (precompiled binary)

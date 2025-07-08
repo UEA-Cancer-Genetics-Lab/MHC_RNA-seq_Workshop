@@ -29,9 +29,9 @@ RUN apt-get update && \
     libtbb12 \
     python3 \
     python3-pip \
-    samtools \
     default-jre \
     fastqc \
+    samtools && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 

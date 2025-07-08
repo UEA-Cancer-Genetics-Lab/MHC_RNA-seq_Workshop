@@ -29,13 +29,14 @@ RUN apt-get update && \
     libtbb12 \
     python3 \
     python3-pip \
+    samtools \
     default-jre \
     fastqc \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # Install fastp (precompiled binary)
-#RUN wget http://opengene.org/fastp/fastp -O /usr/local/bin/fastp && \
+RUN wget http://opengene.org/fastp/fastp -O /usr/local/bin/fastp && \
     #chmod a+x /usr/local/bin/fastp
 
 

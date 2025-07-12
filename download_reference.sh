@@ -13,7 +13,5 @@ wget -nv https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/ge
 
 salmon index -t reference_files/gencode.v19.pc_transcripts.fa -i reference_files/salmon_index --gencode -k 7
 
-rm -rf references
-
-mkdir results/fastqc
-mkdir results/fastp
+mkdir -p results/fastqc
+mkdir -p results/fastp
